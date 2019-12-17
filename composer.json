@@ -1,0 +1,59 @@
+{
+    "name": "rothrauff-consulting/laravel-shopify",
+    "description": "A Laravel wrapper for the Shopify API.",
+    "keywords": [
+        "rothrauff-consulting",
+        "laravel-shopify",
+        "shopify",
+        "laravel"
+    ],
+    "homepage": "https://github.com/rothrauff-consulting/laravel-shopify",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Matthew Myers",
+            "email": "mmyers@rothrauffconsulting.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^5.8|^6.0",
+        "rothrauff-consulting/shopify": "^1.0.0" 
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RothrauffConsulting\\LaravelShopify\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RothrauffConsulting\\LaravelShopify\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RothrauffConsulting\\LaravelShopify\\LaravelShopifyServiceProvider"
+            ],
+            "aliases": {
+                "Shopify": "RothrauffConsulting\\LaravelShopify\\LaravelShopifyFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
