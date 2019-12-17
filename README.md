@@ -34,14 +34,18 @@ SHOPIFY_API_VERSION=
 Use Shopify;
 
 Shopify::get('products');
-Shopify::get('products', ['fields' => 'id, title']);
+Shopify::get('products', ['fields' => 'id,title']);
 
 Shopify::post('products', [
-    //new product
+    'product' => [
+        //new product
+    ]
 ]);
 
 Shopify::put('products/{id}', [
-    //update product
+    'product' => [
+        //update product
+    ]
 ]);
 
 Shopify::delete('products/{id}');
