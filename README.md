@@ -5,7 +5,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/rothrauff-consulting/laravel-shopify.svg?style=flat-square)](https://scrutinizer-ci.com/g/rothrauff-consulting/laravel-shopify)
 [![Total Downloads](https://img.shields.io/packagist/dt/rothrauff-consulting/laravel-shopify.svg?style=flat-square)](https://packagist.org/packages/rothrauff-consulting/laravel-shopify)
 
-Currently supports version 2019-10 of the api, and will support all released versions.
+Currently supports versions 2019-10 and 2020-01 of the api, and will support all released versions.
 
 ## Installation
 

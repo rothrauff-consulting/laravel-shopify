@@ -19,7 +19,7 @@
     ],
     "require": {
         "php": "^7.1",
-        "illuminate/support": "^5.8|^6.0|^7.0",
+        "illuminate/support": "^5.7|^5.8|^6.0|^7.0",
         "rothrauff-consulting/shopify": "^1.0.0" 
     },
     "require-dev": {
