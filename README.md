@@ -5,7 +5,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/rothrauff-consulting/laravel-shopify.svg?style=flat-square)](https://scrutinizer-ci.com/g/rothrauff-consulting/laravel-shopify)
 [![Total Downloads](https://img.shields.io/packagist/dt/rothrauff-consulting/laravel-shopify.svg?style=flat-square)](https://packagist.org/packages/rothrauff-consulting/laravel-shopify)
 
-Currently supports versions 2019-10 and 2020-01 of the api, and will support all released versions.
+Currently supports versions 2019-10, 2020-01, and 2020-04 of the REST Admin API, and will support all released versions.
 
 ## Installation
 
@@ -28,6 +28,12 @@ Optionally:
 
 ``` bash
 SHOPIFY_API_VERSION=
+```
+
+There is a retry mechanism that allows you to set how many retries, and how long to wait before retrying:
+```
+SHOPIFY_RETRY_COUNT=
+SHOPIFY_TIMEOUT_SECONDS=
 ```
 
 ``` php
